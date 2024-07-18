@@ -7,7 +7,20 @@
 */
 
 function isPalindrome(str) {
-    return true;
+  let strLower = str.toLowerCase();
+  let maxLength = strLower.length;
+
+  for(let i=0;i<maxLength/2;i++){
+    if(strLower[i] != strLower[maxLength-1]){
+      return false;
+    }
+    else{
+      maxLength -=1;
+    }
   }
-  
-  module.exports = isPalindrome;
+  return true;
+}
+
+let result = isPalindrome("Nan");
+console.log(result);
+  // module.exports = isPalindrome;

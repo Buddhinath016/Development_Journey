@@ -9,5 +9,19 @@ Hint - use Date class exposed in JS
 */
 
 function calculateTime(n) {
-    return 0.01;
+    let sum = 0;
+    let before = (new Date()).getTime();
+    for(let i=1;i<=n;i++){
+        sum +=i;
+    }
+    let after = (new Date()).getTime();
+    return after-before;
 }
+
+let result1 = calculateTime(100);
+console.log(result1);
+let result2 = calculateTime(100000);
+console.log(result2);
+let result3 = calculateTime(1000000000);
+console.log(result3);
+

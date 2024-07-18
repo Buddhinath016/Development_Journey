@@ -8,7 +8,32 @@
 */
 
 function isAnagram(str1, str2) {
+  let count = 0;
+  let str1Array = [];
+  let str2Array = [];
 
+  if(str1.length == str2.length){
+
+    for(let k=0;k<str1.length;k++){
+      str1Array.push(str1.charAt(k));
+      str2Array.push(str2.charAt(k));
+    }
+
+    str1Array.sort();
+    str2Array.sort();
+
+    for(let i=0;i<str1Array.length;i++){
+      if(str1Array[i] != str2Array[i]){
+        return false;
+      }
+    }
+    return true;
+  }
+  else{
+    return false;
+  }
 }
 
-module.exports = isAnagram;
+let result = isAnagram("spart","trasp");
+console.log(result);
+// module.exports = isAnagram;

@@ -1,0 +1,3 @@
+to use node - npm init -y -> package.json
+to use express - npm i express -> package-lock.json
+to extract body - npm i body-parser

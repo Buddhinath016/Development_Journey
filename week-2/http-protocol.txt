@@ -1,0 +1,4 @@
+200 - everthing is okay
+404 - page/route not found
+403 - authentication issue
+500 - internal server error

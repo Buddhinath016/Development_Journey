@@ -4,3 +4,5 @@ to extract body - npm i body-parser
 
 left shift - ctrl+[
 rigth shift - ctrl+]
+
+for input validation(schema) - npm i zod

@@ -53,6 +53,9 @@ app.get("/users",(req,res)=>{
     const token = req.headers.authorization;
     try{
         const decoded = jwt.verify(token, jwtPassword); 
+        return res.status(200).json({
+            msg :decoded,
+        });
     }
     catch(err){
         return res.status(403).json({
